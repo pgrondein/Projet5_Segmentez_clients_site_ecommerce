@@ -84,6 +84,56 @@ Agglomeration of the closest individuals/clusters into fewer and fewer clusters.
 
 <img src="https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/c7883ccb-c072-4fc7-b981-0e6a0bd66540" height="400">
 
+However, the algorithmic complexity of this type of model is heavy and not suitable for a large dataset, such as the one studied here.
 
+### DBScan
 
+Making of clusters is done by neighborhood density, which must be defined in advance.
 
+<img src="https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/ba47c61f-59e1-4d97-b008-0f776ecf8b3e" height="400">
+
+The chosen density is 100. Several neighborhood sizes have been tested. However, this type of model is not suitable for densities of individuals that are too low, as in the dataset studied here.
+
+### K-Means
+
+Groups observations with high similarity.
+The optimal number of clusters must be determined beforehand.
+
+<img src="https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/fa867c44-dfd9-4a25-ac2f-6ea972e389f4" height="400">
+
+The model is tested for different numbers of clusters, and the SSE (Sum of Squared Errors) is calculated each time. The optimal number of clusters is selected at the “bend” of the curve, here 5.
+
+It is also possible to determine the optimal number of clusters thanks to the silhouette coefficient.
+
+<img src="https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/7243a4a4-6c97-4e62-b06c-cf0ca49155bf" height="400">
+
+In order to obtain clusters of equivalent size and distribution, we can see that the optimal number of clusters seems to be 5. 
+We therefore set k = 5 for the model.
+
+## Results
+
+### Clusters 
+
+| Clusters | Users | % users | Average Recency (days) | Average Frequency | Average Monetary | Average number of items | Average review score |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| `1`  | 11295 | 12 | 441 +/-  95 | 1.032 +/- 0.19 | 158 +/- 206 | 1.09 +/- 0.32 | 3.7 +/- 0.48 |
+| `2`  | 15240 | 16 | 182 +/- 74 | 1.044 +/- 0.24 | 161 +/- 208 | 1.08 +/- 0.33 | 3.6  +/- 0.46 |
+| `3`  | 31550 | 33 | 170 +/- 72 | 1.038 +/- 0.23 | 160 +/- 210 | 1.08 +/- 0.29 | 4.9 +/- 0.04 |
+| `4`  | 13273 | 14 | 289 +/- 144 | 1.020 +/- 0.15 | 193 +/- 293 | 1.21 +/- 0.49 | 1.2 +/- 0.41 |
+| `5`  | 23362 | 25 | 436 +/- 95 | 1.030 +/- 0.19 | 163 +/- 227 | 1.09 +/- 0.30 | 5.0 +/- 0.03 |
+
+### Maintenance contract
+
+It is necessary to find the optimal update frequency for the stability of the segmentation system (distribution of users into stable groups). For this, we use the ARI (Adjusted Rand Index), which gives a measure of the group stability, and we calculate the average of this value according to the update period.
+
+<img src="https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/0081a6be-9a5b-4949-a092-c34119931051" height="400">
+
+## Conclusion
+
+It is possible to identify three customer profiles:
+
+- Already loyal customers: groups 2 and 3 come often, spend less but regularly and seem satisfied with the site
+- High-potential customers: group 4 came the most recently, is not yet loyal but has spent more than the others, with a fairly low satisfaction rating. Customers to follow up.
+- Two groups of customers of little interest for our study, to be left aside.
+
+The recommended update frequency of the segmentation system is 15 days, which can be pushed to 7 days for better stability.
