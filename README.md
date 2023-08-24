@@ -1,4 +1,4 @@
-# Customer Clustering of an e-commerce website
+# Customer Segmentation of an e-commerce website
 
 ![bannière](https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/ec65bafc-2f4a-4ccd-8067-8194bb38d778)
 
