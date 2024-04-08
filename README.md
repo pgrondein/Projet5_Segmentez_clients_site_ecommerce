@@ -1,6 +1,6 @@
 # Customer Segmentation of an e-commerce website
 
-![bannière](https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/ec65bafc-2f4a-4ccd-8067-8194bb38d778)
+![bannière](https://github.com/pgrondein/customer_segmentation_e-commerce/assets/113172845/3405999d-40e0-4a0a-9e8c-536c8103a05e)
 
 ## Context
 
