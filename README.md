@@ -42,31 +42,31 @@ This method will allow, among other things, to:
 ### Single feature analysis
 #### Recency
 
-<img src="https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/e0e944dc-2bc1-4f46-85c6-066b29568efc" height="400">
+<img src="https://github.com/pgrondein/customer_segmentation_e-commerce/assets/113172845/3f753e71-b6aa-47e4-8de3-85aa86cd1707" height="400">
 
 Recency distribution appears to be between 44 and 772 days.
 
 #### Frequency
 
-<img src="https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/9ab1c6a1-451b-4988-b56f-27fdbf4f323b" height="400">
+<img src="https://github.com/pgrondein/customer_segmentation_e-commerce/assets/113172845/1d1800b4-59f2-42cd-b8a7-5b61a69491d0" height="400">
 
 A large majority (97%) of customers have only ordered once.
 
 #### Monetary
 
-<img src="https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/6262f5c6-7fe7-48d1-bf54-98a1e5f223e0" height="400">
+<img src="https://github.com/pgrondein/customer_segmentation_e-commerce/assets/113172845/845dddf3-85fa-4e59-98a9-277af9e4ecbe" height="400">
 
 The majority of the amounts are below the 50 BRL mark. However, standard deviation is important.
 
 #### Review Score
 
-<img src="https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/ec3a0bb0-0919-4792-94f6-839c3e55a1ac" height="400">
+<img src="https://github.com/pgrondein/customer_segmentation_e-commerce/assets/113172845/47ef27d5-c181-46dc-a6c3-732fb269b60a" height="400">
 
 Review score have a majority of 5.
 
 #### Average number of items
 
-<img src="https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/8416dc4b-e465-473c-9981-34f1a7cc177e" height="400">
+<img src="https://github.com/pgrondein/customer_segmentation_e-commerce/assets/113172845/aed3072a-72c2-4f1a-9637-327ccc0b42de" height="400">
 
 ### Bivariate Analysis
 
