@@ -72,7 +72,7 @@ Review score have a majority of 5.
 
 Faced with the possibility of adding features to strengthen the segmentation, it is important to ensure that the added variables are not correlated to those already selected.
 
-<img src="https://github.com/pgrondein/client_segmentation_e-commerce/assets/113172845/5e1a8133-2a86-41ff-9606-c143a077f968" height="400">
+<img src="https://github.com/pgrondein/customer_segmentation_e-commerce/assets/113172845/eb7deda8-dbb6-4b0b-a77f-ff74b8dd7324" height="400">
 
 None of the features seem correlated.
 
